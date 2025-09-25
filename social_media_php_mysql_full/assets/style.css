@@ -1,0 +1,25 @@
+:root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#6c5ce7}
+*{box-sizing:border-box}
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#071021,#07192a);color:#e6eef8;margin:0}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:rgba(255,255,255,0.02)}
+.brand{font-weight:700;font-size:20px;color:var(--accent)}
+.container{display:flex;gap:20px;padding:24px;max-width:1100px;margin:30px auto}
+.side{width:320px}
+.feed{flex:1}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+.auth{display:flex;min-height:100vh;align-items:center;justify-content:center}
+.auth .card{width:360px}
+input,textarea,button{width:100%;padding:10px;margin-top:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+textarea{min-height:80px}
+.post{margin-bottom:16px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));padding:14px;border-radius:12px}
+.post-header{margin-bottom:8px}
+.post-media{max-width:100%;border-radius:8px;margin-top:10px}
+.post-actions{display:flex;gap:12px;margin-top:10px}
+.like-btn{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:8px 12px;border-radius:10px;cursor:pointer}
+.muted{color:var(--muted);font-size:13px}
+.profile-header{display:flex;flex-direction:column;gap:6px}
+.comment{padding:8px;border-top:1px dashed rgba(255,255,255,0.03)}
+.errors{background:#ff4d4f;padding:8px;border-radius:6px;color:#fff}
+.pagination{margin-top:12px}
+.pagination a{display:inline-block;padding:6px 10px;background:rgba(255,255,255,0.03);border-radius:6px;margin-right:6px}
+@media(max-width:900px){.container{flex-direction:column;padding:12px}.side{width:auto}}
